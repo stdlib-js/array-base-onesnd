@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-base-onesnd",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Create an n-dimensional nested array filled with ones.",
   "license": "Apache-2.0",
   "author": {
@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/array-base-fillednd": "github:stdlib-js/array-base-fillednd#main",
+    "@stdlib/array-base-fillednd": "^0.0.1",
     "@stdlib/types": "^0.0.14"
   },
   "devDependencies": {
