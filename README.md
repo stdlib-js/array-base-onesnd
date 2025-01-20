@@ -45,32 +45,38 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/array-base-onesnd
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var onesnd = require( '@stdlib/array-base-onesnd' );
+onesnd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-onesnd@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var onesnd = require( 'path/to/vendor/umd/array-base-onesnd/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-onesnd@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.onesnd;
+})();
+</script>
 ```
 
 #### onesnd( shape )
@@ -102,8 +108,13 @@ var out = onesnd( [ 2, 3 ] );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var onesnd = require( '@stdlib/array-base-onesnd' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-onesnd@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var out = onesnd( [ 1, 3 ] );
 // returns [ [ 1.0, 1.0, 1.0 ] ]
@@ -119,6 +130,11 @@ out = onesnd( [ 1, 3, 1 ] );
 
 out = onesnd( [ 1, 1, 1, 3 ] );
 // returns [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ]
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -226,17 +242,17 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/base/zerosnd]: https://github.com/stdlib-js/array-base-zerosnd
+[@stdlib/array/base/zerosnd]: https://github.com/stdlib-js/array-base-zerosnd/tree/umd
 
-[@stdlib/array/base/ones]: https://github.com/stdlib-js/array-base-ones
+[@stdlib/array/base/ones]: https://github.com/stdlib-js/array-base-ones/tree/umd
 
-[@stdlib/array/base/ones2d]: https://github.com/stdlib-js/array-base-ones2d
+[@stdlib/array/base/ones2d]: https://github.com/stdlib-js/array-base-ones2d/tree/umd
 
-[@stdlib/array/base/ones3d]: https://github.com/stdlib-js/array-base-ones3d
+[@stdlib/array/base/ones3d]: https://github.com/stdlib-js/array-base-ones3d/tree/umd
 
-[@stdlib/array/base/ones4d]: https://github.com/stdlib-js/array-base-ones4d
+[@stdlib/array/base/ones4d]: https://github.com/stdlib-js/array-base-ones4d/tree/umd
 
-[@stdlib/array/base/ones5d]: https://github.com/stdlib-js/array-base-ones5d
+[@stdlib/array/base/ones5d]: https://github.com/stdlib-js/array-base-ones5d/tree/umd
 
 <!-- </related-links> -->
 
