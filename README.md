@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import onesnd from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-onesnd@deno/mod.js';
+import onesnd from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-onesnd@v0.2.3-deno/mod.js';
 ```
 
 #### onesnd( shape )
@@ -85,7 +85,7 @@ var out = onesnd( [ 2, 3 ] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import onesnd from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-onesnd@deno/mod.js';
+import onesnd from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-onesnd@v0.2.3-deno/mod.js';
 
 var out = onesnd( [ 1, 3 ] );
 // returns [ [ 1.0, 1.0, 1.0 ] ]
